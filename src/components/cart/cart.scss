@@ -1,0 +1,109 @@
+.cart {
+   padding-left: 338px;
+
+   @media (max-width: 767px) {
+      display: none;
+   }
+
+   @media (max-width: 1250px) {
+      padding-left: 100px;
+   }
+
+   @media (max-width: 990px) {
+      padding-top: 50px;
+   }
+
+   &__content {
+      &-row {
+         display: flex;
+         padding-top: 45px;
+
+         @media (max-width: 990px) {
+            display: block;
+         }
+      }
+      img {
+         width: 441px;
+         height: 284px;
+      }
+      &-col {
+         padding-left: 125px;
+
+         @media (max-width: 990px) {
+            padding-left: 0;
+         }
+      }
+      p {
+         font-weight: bold;
+         font-size: 24px;
+         line-height: 32px;
+         position: relative;
+
+         &::before {
+            content: "";
+            background: #52ae30;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            position: absolute;
+            left: 0px;
+            top: 2px;
+            flex: none;
+            order: 0;
+            align-self: flex-start;
+            flex-grow: 0;
+            margin: 12px -32px;
+         }
+
+         span {
+            font-weight: 800;
+            color: #428b26;
+         }
+      }
+      &-flex {
+         padding-top: 48px;
+         display: flex;
+         justify-content: space-between;
+         max-width: 1115px;
+         button {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: #ffffff;
+            background: #52ae30;
+            border-radius: 32px;
+            width: 200px;
+            height: 56px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+         }
+         a {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+            text-decoration: none;
+            background: url(../../assets/images/pdf.png) no-repeat left;
+            padding-left: 37px;
+            padding-top: 14px;
+         }
+      }
+
+      &-title {
+         h1 {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.4px;
+         }
+         h3 {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            color: #494949;
+            max-width: 390px;
+         }
+      }
+   }
+}

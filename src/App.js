@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './App.scss';
+import Cart from './components/cart/Cart';
+import CountProfitContainer from './components/countProfit/CountProfitContainer';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Mobile from './components/mobileApp/MobileApp';
+import Question from './components/question/Question';
+import Rate from './components/rate/Rate';
+import Score from './components/score/Score';
+import Stock from './components/stock/Stock';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Stock />
+      <Rate />
+      <CountProfitContainer />
+      <Score />
+      <Cart />
+      <Question />
+      <Mobile />
+      <Footer />
     </div>
   );
 }

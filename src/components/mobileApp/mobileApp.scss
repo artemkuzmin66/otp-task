@@ -1,0 +1,67 @@
+.mobile {
+   padding-top: 220px;
+   position: relative;
+
+          @media (max-width: 767px) {
+    display:none;
+   }
+
+   &-img {
+      width: 100%;
+      height: 682px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+   }
+   &__content {
+      padding-left: 911px;
+      position: absolute;
+
+      @media (max-width: 1567px) {
+         padding-left: 711px;
+      }
+
+      @media (max-width: 1250px) {
+         padding-left: 411px;
+      }
+
+      @media (max-width: 990px) {
+         padding-left: 211px;
+      }
+
+      &-logo {
+         margin: 61px 0px 24px 0px;
+         width: 64px;
+         height: 64px;
+      }
+      &-google {
+         margin-top: 12px;
+      }
+
+      h1 {
+         font-weight: 800;
+         font-size: 40px;
+         line-height: 48px;
+         letter-spacing: -0.4px;
+         color: #ffffff;
+         width: 510px;
+      }
+      p {
+         font-weight: normal;
+         font-size: 20px;
+         line-height: 28px;
+         color: #ffffff;
+         max-width: 548px;
+      }
+      &-row {
+         display: flex;
+      }
+      &-col {
+         margin-left: 48px;
+         margin-top: 24px;
+         display: flex;
+         flex-direction: column;
+      }
+   }
+}

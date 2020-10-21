@@ -1,0 +1,81 @@
+.header {
+   position: relative;
+
+   @media (max-width: 767px) {
+      display: none;
+   }
+
+   &__ico {
+      &-shape {
+         position: absolute;
+         top: 428px;
+         left: -114px;
+         width: 859px;
+         height: 859px;
+
+         @media (max-width: 990px) {
+            top: 728px;
+            width: 459px;
+            height: 459px;
+         }
+      }
+      &-main {
+         width: 100%;
+         height: 100vh;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+      }
+   }
+   &__content {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      margin-left: 336px;
+      margin-top: 205px;
+
+      @media (max-width: 1250px) {
+         margin-left: 100px;
+      }
+
+      &-logo {
+         position: absolute;
+         margin-top: -120px;
+      }
+      &-text {
+         font-weight: 600;
+         font-size: 32px;
+         line-height: 40px;
+         color: #ffff;
+         background-image: url(../../assets/images/arrow.svg);
+         padding-left: 50px;
+         background-repeat: no-repeat;
+         max-width: 880px;
+      }
+      &-btn {
+         font-weight: 600;
+         font-size: 20px;
+         line-height: 28px;
+         color: #ffff;
+         background: #ff6600;
+         border-radius: 32px;
+         width: 188px;
+         height: 56px;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         margin-top: 77px;
+      }
+      h1 {
+         color: #ffff;
+         font-size: 56px;
+         line-height: 64px;
+         max-width: 880px;
+
+         @media (max-width: 1250px) {
+            font-size: 42px;
+         }
+      }
+   }
+}

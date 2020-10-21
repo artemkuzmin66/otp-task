@@ -1,0 +1,46 @@
+.text {
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 32px;
+   color: #676767;
+   position: relative;
+   cursor: pointer;
+
+   @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 28px;
+   }
+
+   &:last-child {
+      margin-left: 48px;
+
+      @media (min-width: 767px) {
+         display: inline;
+      }
+      @media (max-width: 767px) {
+         display: none;
+      }
+   }
+}
+
+.textMobile {
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 32px;
+   color: #676767;
+   position: relative;
+
+   @media (max-width: 767px) {
+      display: inline;
+      margin-left: 18px;
+      font-size: 20px;
+      line-height: 28px;
+   }
+   @media (min-width: 767px) {
+      display: none;
+   }
+}
+
+.active {
+   color: red;
+}
