@@ -6,29 +6,28 @@ import Slider from './slider/Slider';
 class Calculator extends React.Component {
 
    state = {
-      range: 300000,
-      rangeTwo: 15000
+      range1: 300000,
+      range2: 15000
 
    }
 
    change = (e) => {
-      this.setState({ range: e.target.value })
+      const { name, value } = e.target
+      this.setState({ [name]: value })
    }
-   changeTwo = (e) => {
-      this.setState({ rangeTwo: e.target.value })
-   }
+
    render() {
-      const { range, rangeTwo } = this.state
+      const { range1, range2 } = this.state
 
       return (
          <div className="calculator">
             <h3>Первоначальная сумма накопления</h3>
             <div className="calculator__slider">
-               <output for="fader" id="volume" className="calculator__slider-num">{range}</output>
+               <output for="fader" id="volume" className="calculator__slider-num">{range1}</output>
                <span className="calculator__slider-rub">RUB</span>
             </div>
             <div className="slider">
-               <input value={range} onChange={this.change} className="range" type="range" id="fader" min="0" max="300000" step="1" />
+               <input name="range1" value={range1} onChange={this.change} className="range" type="range" id="fader" min="0" max="300000" step="1" />
             </div>
 
             <div className="calculator__slider-text-block">
@@ -54,11 +53,11 @@ class Calculator extends React.Component {
 
             <div className="calculator__term-title">Сумма покупок в месяц (необходима для повышенной ставки)</div>
             <div className="calculator__slider two">
-               <span className="calculator__slider-num">{rangeTwo}</span>
+               <span className="calculator__slider-num">{range2}</span>
                <span className="calculator__slider-rub">+ 0,5% к ставке</span>
             </div>
             <div className="slider">
-               <input value={rangeTwo} onChange={this.changeTwo} className="range" type="range" id="fader" min="0" max="30000" step="1" />
+               <input name="range2" value={range2} onChange={this.change} className="range" type="range" id="fader" min="0" max="30000" step="1" />
             </div>
             <Earn />
          </div>
