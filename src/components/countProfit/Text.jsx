@@ -3,7 +3,7 @@ import './countProfit.scss';
 import s from './Profit.module.scss';
 
 const Text = (props) => {
-   debugger
+
    const classes = [`${s.text}`]
    if (props.texts.onActive) {
       classes.push(`${s.active}`)
