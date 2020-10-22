@@ -8,6 +8,13 @@ const Text = (props) => {
    if (props.texts.onActive) {
       classes.push(`${s.active}`)
    }
+   // else if (props.texts.onActive[1] === true) {
+
+
+   //    (props.texts.onActive[0]).
+   //       classes.delete(`${s.active}`)
+
+   // }
 
    return (
       <>
@@ -15,10 +22,9 @@ const Text = (props) => {
             <span
                onClick={props.handleClass}
                className={classes.join(' ')}
-            >{props.t.name}</span>
+            >{props.texts.name}</span>
          </span>
-
-
+         {/* <span className={s.textMobile}>ОТП Premium</span> */}
       </>
    )
 }

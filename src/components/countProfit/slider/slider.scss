@@ -1,0 +1,26 @@
+.slider {
+   position: relative;
+}
+
+#fader {
+}
+
+#fader::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   width: 24px;
+   height: 24px;
+   background: #52ae30;
+   border: 5px solid #ffffff;
+   box-sizing: border-box;
+   box-shadow: 0 0 3px #ffffff;
+   border-radius: 40px;
+   z-index: 1;
+}
+
+.slider > input[type="range"] {
+   border-radius: 2px;
+   width: 262px;
+   height: 4px;
+   outline: none;
+   position: absolute;
+}

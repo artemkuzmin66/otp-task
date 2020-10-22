@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './countProfit.scss';
-import s from './Profit.module.scss';
 import Text from './Text';
 
 class Profit extends React.Component {
@@ -8,7 +7,7 @@ class Profit extends React.Component {
 
    state = {
       text: [
-         { onActive: false, name: 'Всем клиентам' },
+         { onActive: true, name: 'Всем клиентам' },
          { onActive: false, name: 'Клиентам ОТП Premium' }
       ]
 
@@ -24,12 +23,12 @@ class Profit extends React.Component {
    }
 
    renderText() {
-      return this.state.text.map(t => {
+      return this.state.text.map(texts => {
          return (
             <Text
-               texts={this.texts}
-               key={t.name}
-               onClass={this.handleClass.bind(this, t.name)}
+               texts={texts}
+               key={texts.name}
+               handleClass={this.handleClass.bind(this, texts.name)}
             />
          )
       })
@@ -42,6 +41,9 @@ class Profit extends React.Component {
       return (
          <div className="profit">
             <div>
+
+               {this.renderText()}
+
                <h1>Рассчитайте свой доход по накопительному счету</h1>
                <div className="profit__text-row">
                   <p className="profit__text">Пополнение и снятие без ограничений</p>
