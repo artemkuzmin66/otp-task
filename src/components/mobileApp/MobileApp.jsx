@@ -11,17 +11,19 @@ const Mobile = () => {
    return (
       <div className="mobile">
          <img className="mobile-img" src={bg} />
-         <div className="mobile__content">
-            <img className="mobile__content-logo" src={logo} />
-            <h1>Мобильное приложение ОТП Банк</h1>
-            <p>Открывайте вклады и накопительные счета прямо в приложении</p>
-            <p>Оплачивайте телефон, ЖКХ и другие услуги</p>
-            <p>Бесплатно пополняйте счёт с карт других банков</p>
-            <div className="mobile__content-row">
-               <img src={QR} />
-               <div className="mobile__content-col">
-                  <img src={apple} />
-                  <img className="mobile__content-google" src={google} />
+         <div className="container">
+            <div className="mobile__content">
+               <img className="mobile__content-logo" src={logo} />
+               <h1>Мобильное приложение ОТП Банк</h1>
+               <p>Открывайте вклады и накопительные счета прямо в приложении</p>
+               <p>Оплачивайте телефон, ЖКХ и другие услуги</p>
+               <p>Бесплатно пополняйте счёт с карт других банков</p>
+               <div className="mobile__content-row">
+                  <img className="mobile__content-row-qr" src={QR} />
+                  <div className="mobile__content-col">
+                     <img src={apple} />
+                     <img className="mobile__content-google" src={google} />
+                  </div>
                </div>
             </div>
          </div>

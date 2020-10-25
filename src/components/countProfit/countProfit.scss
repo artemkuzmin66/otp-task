@@ -1,6 +1,5 @@
 .profit {
    padding-top: 131px;
-   padding-left: 339px;
 
    @media (max-width: 1250px) {
       padding-left: 100px;
@@ -8,6 +7,11 @@
 
    @media (max-width: 767px) {
       padding-left: 16px;
+      padding-top: 0;
+   }
+
+   @media (max-width: 450px) {
+      padding-left: 0px;
    }
 
    h1 {
@@ -61,7 +65,6 @@
 
 .calculator {
    margin-top: 139px;
-   margin-left: 338px;
 
    @media (max-width: 1250px) {
       margin-left: 100px;
@@ -69,6 +72,11 @@
 
    @media (max-width: 767px) {
       margin-left: 16px;
+   }
+
+   @media (max-width: 450px) {
+      margin-left: 0px;
+      margin-top: 60px;
    }
    h3 {
       font-weight: normal;
@@ -194,7 +202,7 @@
    }
 
    @media (max-width: 1341px) {
-      margin: 40px auto;
+      margin: 80px auto;
    }
 
    @media (max-width: 767px) {

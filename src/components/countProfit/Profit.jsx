@@ -41,9 +41,7 @@ class Profit extends React.Component {
       return (
          <div className="profit">
             <div>
-
                {this.renderText()}
-
                <h1>Рассчитайте свой доход по накопительному счету</h1>
                <div className="profit__text-row">
                   <p className="profit__text">Пополнение и снятие без ограничений</p>

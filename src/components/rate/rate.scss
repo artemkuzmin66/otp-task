@@ -1,16 +1,13 @@
 .rate {
-   margin-left: 338px;
    margin-top: 20px;
-   max-width: 1121px;
 
-   @media (max-width: 1250px) {
-      font-size: 28px;
-      margin-left: 100px;
+   @media (max-width: 767px) {
+      padding-left: 0;
+      padding-left: 16px;
    }
 
-   
-          @media (max-width: 767px) {
-    margin-left: 16px;
+   @media (max-width: 450px) {
+      padding-left: 0px;
    }
 
    h1 {
@@ -18,11 +15,10 @@
       font-size: 40px;
       line-height: 48px;
 
-          @media (max-width: 767px) {
-    font-size:28px;
-    line-height: 36px;
-   }
-
+      @media (max-width: 767px) {
+         font-size: 28px;
+         line-height: 36px;
+      }
    }
    &__row {
       display: flex;
@@ -33,33 +29,35 @@
          align-items: center;
          flex-wrap: wrap;
       }
-
-      @media (max-width: 767px) {
-         padding-left: 0;
-      }
    }
    &__col {
       display: flex;
       flex-direction: column;
+
+      &:nth-child(2) {
+         padding: 0 20px;
+
+         @media (max-width: 662px) {
+            padding-left: 0;
+         }
+      }
+      &:nth-child(1) {
+         @media (max-width: 662px) {
+            padding-right: 20px;
+         }
+      }
+
       &-ico {
          max-width: 73px;
          max-height: 67px;
          position: absolute;
-         margin-top: 240px;
-
-         @media (max-width: 1250px) {
-            margin-top: 251px;
-         }
+         margin-top: 70px;
       }
-      &-num {
-         color: #c2d1d9;
-         opacity: 0.3;
-         font-size: 300px;
-         margin-left: 50px;
 
-         @media (max-width: 1250px) {
-            font-size: 200px;
-         }
+      &-img {
+         width: 96px;
+         height: 148px;
+         margin-left: 60px;
       }
 
       &-text {
@@ -70,11 +68,7 @@
          font-size: 24px;
          line-height: 32px;
          max-width: 295px;
-         margin-top: -90px;
-
-         @media (max-width: 1250px) {
-            margin-top: -62px;
-         }
+         margin-top: -10px;
       }
 
       p {
@@ -82,6 +76,7 @@
          font-size: 16px;
          line-height: 24px;
          max-width: 304px;
+         margin-top: -5px;
 
          span {
             color: #428b26;

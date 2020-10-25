@@ -2,8 +2,8 @@
    padding-top: 220px;
    position: relative;
 
-          @media (max-width: 767px) {
-    display:none;
+   @media (max-width: 767px) {
+      padding-top: 0;
    }
 
    &-img {
@@ -30,6 +30,10 @@
          padding-left: 211px;
       }
 
+      @media (max-width: 767px) {
+         padding-left: 16px;
+      }
+
       &-logo {
          margin: 61px 0px 24px 0px;
          width: 64px;
@@ -37,6 +41,10 @@
       }
       &-google {
          margin-top: 12px;
+
+         @media (max-width: 767px) {
+            margin-left: 0px;
+         }
       }
 
       h1 {
@@ -46,6 +54,12 @@
          letter-spacing: -0.4px;
          color: #ffffff;
          width: 510px;
+
+         @media (max-width: 767px) {
+            font-size: 28px;
+            line-height: 36px;
+            width: 347px;
+         }
       }
       p {
          font-weight: normal;
@@ -53,15 +67,31 @@
          line-height: 28px;
          color: #ffffff;
          max-width: 548px;
+
+         @media (max-width: 767px) {
+            font-size: 24px;
+            line-height: 30px;
+            width: 347px;
+         }
       }
       &-row {
          display: flex;
+      }
+      &-row-qr {
+         @media (max-width: 767px) {
+            display: none;
+         }
       }
       &-col {
          margin-left: 48px;
          margin-top: 24px;
          display: flex;
          flex-direction: column;
+
+         @media (max-width: 767px) {
+            display: block;
+            margin-left: -21px;
+         }
       }
    }
 }

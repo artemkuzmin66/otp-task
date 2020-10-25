@@ -18,12 +18,12 @@ const Text = (props) => {
 
    return (
       <>
-         <span>
-            <span
+         <ul>
+            <li
                onClick={props.handleClass}
                className={classes.join(' ')}
-            >{props.texts.name}</span>
-         </span>
+            >{props.texts.name}</li>
+         </ul>
          {/* <span className={s.textMobile}>ОТП Premium</span> */}
       </>
    )
