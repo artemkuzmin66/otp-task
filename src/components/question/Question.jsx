@@ -34,7 +34,6 @@ class Question extends React.Component {
 
 
    render() {
-      debugger
       const { name1, name2, name3, name4, isOpen1, isOpen2, isOpen3, isOpen4 } = this.state
       return (
          <div>

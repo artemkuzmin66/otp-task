@@ -18,7 +18,7 @@ import HeaderNav from './headerNav/HeaderNav';
 function App() {
   return (
     <div className="app">
-      <HeaderNav />
+      {/* <HeaderNav /> */}
       <Header />
       <Stock />
       <Rate />

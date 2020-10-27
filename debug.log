@@ -11,3 +11,10 @@
 [1021/160139.236:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1022/113130.760:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
 [1025/114216.915:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1026/224456.861:ERROR:directory_reader_win.cc(43)] FindFirstFile: Системе не удается найти указанный путь. (0x3)
+[1026/235156.083:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[1026/235156.084:ERROR:process_reader_win.cc(151)] SuspendThread: Отказано в доступе. (0x5)
+[1026/235156.084:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1026/235156.083:ERROR:process_reader_win.cc(123)] NtOpenThread: {Отказано в доступе} Процесс запросил доступ к объекту, но права на доступ не предоставлены. (0xc0000022)
+[1026/235156.111:ERROR:exception_snapshot_win.cc(99)] thread ID 2912 not found in process
+[1026/235156.111:ERROR:exception_snapshot_win.cc(99)] thread ID 7132 not found in process
