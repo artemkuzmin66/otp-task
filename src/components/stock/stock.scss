@@ -1,42 +1,53 @@
+.container {
+   @media (min-width: 768px) {
+      padding: 0 32px;
+   }
+
+   @media (min-width: 1200px) {
+      padding: 0 16px;
+   }
+}
 .stock {
    background-color: #dbf4fa;
-   position: relative;
-   width: 100%;
-   height: 340px;
-   top: -4px;
-   margin: 0 auto;
+   padding: 45px 0;
+
+   @media (min-width: 992px) {
+      padding: 50px 0;
+   }
 
    &__content {
       display: flex;
       flex-direction: column;
-      padding-top: 60px;
-
-      @media (max-width: 1250px) {
-         padding-left: 100px;
-      }
-
-      @media (max-width: 767px) {
-         padding-left: 16px;
-         padding-top: 0;
-      }
-
-      @media (max-width: 450px) {
-         padding-left: 0px;
-      }
 
       &-h1 {
          font-weight: 800;
          font-size: 40px;
          line-height: 48px;
+         font-family: "SquadExtraBold", sans-serif;
 
-         @media (max-width: 1250px) {
-            font-size: 28px;
+         @media (min-width: 768px) {
+            margin-bottom: 16px;
+         }
+
+         @media (min-width: 1600px) {
+            margin-bottom: 32px;
+            max-width: 50%;
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: -0.4px;
          }
       }
       &-p {
-         font-weight: normal;
-         font-size: 20px;
-         line-height: 28px;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 24px;
+         line-height: 32px;
+         font-family: SquadExtraBold;
+         color: #494949;
+
+         @media (min-width: 768px) {
+            margin-bottom: 16px;
+         }
       }
       &-a {
          font-weight: bold;
@@ -45,9 +56,10 @@
          color: #428b26;
          text-decoration: none;
          background: url(../../assets/images/up.svg) right center no-repeat;
-         padding-right: 14px;
+         padding-right: 0;
          max-width: 120px;
          cursor: pointer;
+         font-family: SourceSansProBold;
       }
    }
 }

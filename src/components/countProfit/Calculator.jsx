@@ -6,8 +6,8 @@ import Slider from './slider/Slider';
 class Calculator extends React.Component {
 
    state = {
-      range1: 300000,
-      range2: 15000
+      range1: 0,
+      range2: 0
 
    }
 

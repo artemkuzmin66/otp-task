@@ -5,16 +5,12 @@ const Deploy = () => {
    return (
       <div name="more" className="deployStock">
          <div className="container">
-            <h1>Акция «Будь в плюсе»</h1>
-            <h2>Получите возможность удвоить остаток на вашем накопительном счете! </h2>
+
             <div className="deployStock__row">
                <div className="deployStock__col">
-
                   <h3>Как участвовать</h3>
                   <p>Пополните ваш накопительный счет и совершайте покупки с карты «ОТП Покупки».
                   Сто участников, которые совершат наибольший объем покупок, станут обладателями призов!</p>
-                  <a className="deployStock__col-rules" href="#">Правила акции</a>
-                  <a className="deployStock__col-close" href="#">Свернуть</a>
                </div>
                <div className="deployStock__col">
                   <h3>Призовой фонд</h3>
@@ -22,6 +18,11 @@ const Deploy = () => {
                   А также денежные призы до 50 000 рублей</p>
                </div>
             </div>
+            <div className="deployStock__footer">
+               <a className="deployStock__col-rules" href="#">Правила акции</a>
+               <a className="deployStock__col-close" href="#">Свернуть</a>
+            </div>
+
          </div>
       </div>
    );

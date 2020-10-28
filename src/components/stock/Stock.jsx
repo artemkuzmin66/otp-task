@@ -18,7 +18,7 @@ class Stock extends React.Component {
 
       return (
          <div>
-            <div className="stock">
+            <section className="stock">
                <div className="container">
                   <div className="stock__content">
                      <h1 className="stock__content-h1">Акция «Будь в плюсе»</h1>
@@ -26,7 +26,7 @@ class Stock extends React.Component {
                      <a onClick={this.handleDeploy} className="stock__content-a" href="#more">Подробнее</a>
                   </div>
                </div>
-            </div>
+            </section>
             { isOpen &&
                <Deploy />
             }
