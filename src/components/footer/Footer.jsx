@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.scss';
+import './Footer.scss';
 import facebook from '../../assets/images/footer/facebook.png'
 import youtube from '../../assets/images/footer/youtube.png'
 import instagram from '../../assets/images/footer/instagram.png'
@@ -16,37 +16,55 @@ const Footer = () => {
       <footer className="footer">
          <div className="container">
             <div className="footer__content">
-               <div className="footer__content-row-link">
-                  <a href="#">Офисы</a>
-                  <a href="#">Банкоматы</a>
-                  <a href="#">О банке</a>
-                  <a href="#">Интернет-банк</a>
+               <div className="footer__top">
+                  <ul className="footer__top-list">
+                     <li><a href="#">Офисы</a></li>
+                     <li><a href="#">Банкоматы</a></li>
+                     <li><a href="#">О банке</a></li>
+                     <li><a href="#">Интернет-банк</a></li>
+                  </ul>
                </div>
-               <div className="footer__content-contact">
-                  <a href="#">Свяжитесь с нами</a>
-                  <a className="footer__content-contact-tel" href="tel:+7(495)7754775">+7 (495) 775 47 75</a>
-                  <a className="footer__content-contact-tel" href="tel:88002007004">8 800 200 70 04</a>
-                  <div className="footer__content-row-ico">
-                     <img src={facebook} />
-                     <img src={youtube} />
-                     <img src={instagram} />
-                     <img src={odnoklassniki} />
-                     <img src={vk} />
+               <div className="footer__body">
+                  <div className="footer__body-left">
+                     <div className="footer__body-left-contact">
+                        <p>Свяжитесь с нами</p>
+                        <a className="footer__body-left-contact-tel" href="tel:+7(495)7754775">+7 (495) 775 47 75</a>
+                        <a className="footer__body-left-contact-tel" href="tel:88002007004">8 800 200 70 04</a>
+                     </div>
+                     <ul className="footer__body-left-contact-list">
+                        <li>
+                           <a href="#"><img src={facebook} /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src={youtube} /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src={instagram} /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src={odnoklassniki} /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src={vk} /></a>
+                        </li>
+                     </ul>
                   </div>
-               </div>
-               <div className="footer__content-mobile">
-                  <a href="#">Мобильный банк</a>
-                  <div className="footer__content-row-mobile">
-                     <img src={apple} />
-                     <img src={google} />
+                  <div className="footer__body-right">
+                     <h3 className="footer__body-right-title">Мобильный банк</h3>
+                     <div className="footer__body-right-store">
+                        <a href="#"><img src={apple} /></a>
+                        <a href="#"><img src={google} /></a>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
+
+
          <div className="footer__two">
             <div className="container">
                <div className="footer__two-content">
-                  <img src={logo} />
+                  <a href="#"><img src={logo} /></a>
                   <p>Генеральная лицензия Банка России №2766 от 27.11.2014 г.</p>
                   <p>© 2020 АО «ОТП Банк»</p>
                </div>
