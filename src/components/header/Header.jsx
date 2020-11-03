@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/images/logo.png'
 import arrow from '../../assets/images/arrow.png'
-import './header.scss';
+import './Header.scss';
 
 const Header = () => {
    return (

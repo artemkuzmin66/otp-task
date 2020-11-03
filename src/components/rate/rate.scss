@@ -1,63 +1,92 @@
 .rate {
-   margin-top: 20px;
+   padding: 60px 0 30px;
 
-   @media (max-width: 767px) {
-      padding-left: 0;
-      padding-left: 16px;
+   @media (min-width: 768px) {
+      padding: 70px 0 0;
+      margin-bottom: -40px;
    }
 
-   @media (max-width: 450px) {
-      padding-left: 0px;
+   @media (min-width: 1200px) {
+      padding: 120px 0 0;
+      margin-bottom: -20px;
+   }
+
+   @media (min-width: 1600px) {
+      padding: 86px 0 0;
    }
 
    h1 {
+      font-family: "SquadExtraBold", sans-serif;
       font-weight: 800;
       font-size: 40px;
       line-height: 48px;
+      margin-bottom: 74px;
 
-      @media (max-width: 767px) {
-         font-size: 28px;
-         line-height: 36px;
+      @media (min-width: 768px) {
+         margin-bottom: 48px;
+      }
+
+      @media (min-width: 1600px) {
+         font-size: 40px;
+         line-height: 48px;
+         letter-spacing: -0.4px;
       }
    }
    &__row {
       display: flex;
-      justify-content: space-between;
-      flex: 33.3333%;
+      flex-direction: column;
 
-      @media (max-width: 1250px) {
-         align-items: center;
+      @media (min-width: 768px) {
+         align-items: flex-start;
+         flex-direction: row;
          flex-wrap: wrap;
+      }
+
+      @media (min-width: 1200px) {
+         align-items: flex-start;
+         justify-content: space-between;
       }
    }
    &__col {
-      display: flex;
-      flex-direction: column;
+      margin-bottom: 52px;
 
-      &:nth-child(2) {
-         padding: 0 20px;
-
-         @media (max-width: 662px) {
-            padding-left: 0;
-         }
+      @media (min-width: 768px) {
+         flex: 0 0 50%;
+         margin-bottom: 80px;
       }
-      &:nth-child(1) {
-         @media (max-width: 662px) {
-            padding-right: 20px;
+
+      @media (min-width: 1024px) {
+         flex: 0 0 33%;
+         margin-bottom: 0;
+      }
+
+      &-wrapper {
+         display: flex;
+         align-items: flex-start;
+         justify-content: flex-end;
+         flex-direction: column;
+         margin-bottom: 14px;
+         position: relative;
+         height: 148px;
+
+         @media (min-width: 768px) {
+            height: 190px;
          }
       }
 
       &-ico {
-         max-width: 73px;
-         max-height: 67px;
-         position: absolute;
-         margin-top: 70px;
+         margin-bottom: 20px;
       }
 
       &-img {
-         width: 96px;
          height: 148px;
-         margin-left: 60px;
+         position: absolute;
+         bottom: 10px;
+         left: 70px;
+
+         @media (min-width: 768px) {
+            left: 90px;
+         }
       }
 
       &-text {
@@ -68,15 +97,14 @@
          font-size: 24px;
          line-height: 32px;
          max-width: 295px;
-         margin-top: -10px;
       }
 
       p {
+         font-family: "SourceSansPro", sans-serif;
          font-weight: normal;
          font-size: 16px;
          line-height: 24px;
          max-width: 304px;
-         margin-top: -5px;
 
          span {
             color: #428b26;

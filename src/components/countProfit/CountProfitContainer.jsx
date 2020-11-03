@@ -1,15 +1,23 @@
 import React from 'react';
 import Calculator from './Calculator';
-import './countProfit.scss';
+import './CountProfit.scss';
 import Profit from './Profit';
+import Tabs from './Tabs';
 
 class CountProfitContainer extends React.Component {
    render() {
       return (
-         <div className="container">
-            <Profit />
-            <Calculator />
-         </div>
+         <section className="calculator-main">
+            <div>
+               <div className="container">
+                  <Profit>
+                     <Tabs label="Всем клиентам" />
+                     <Tabs label="ОТП Premium" />
+                  </Profit>
+                  <Calculator />
+               </div>
+            </div>
+         </section>
       )
    }
 }

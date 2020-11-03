@@ -1,96 +1,121 @@
+.container--mobileApp {
+   padding: 0;
+
+   @media (min-width: 768px) {
+      padding: 0 32px;
+   }
+
+   @media (min-width: 1200px) {
+      padding: 0 16px;
+   }
+}
+
 .mobile {
-   padding-top: 220px;
-   position: relative;
+   background: url(../../assets/images/mobileApp/bg.png) no-repeat 50% #607d8b;
+   background-size: cover;
+   padding: 43px 0;
+   margin-bottom: 60px;
 
-   @media (max-width: 767px) {
-      padding-top: 0;
+   @media (min-width: 768px) {
+      padding: 70px 0;
+      margin-bottom: 80px;
+      border-radius: 32px;
    }
 
-   &-img {
-      width: 100%;
-      height: 682px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      position: absolute;
+   @media (min-width: 1200px) {
+      padding: 78px 0;
+      margin-bottom: 120px;
    }
+
+   @media (min-width: 1600px) {
+      padding: 118px 0;
+      margin-bottom: 160px;
+   }
+
+   &__wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      @media (min-width: 768px) {
+         align-items: flex-end;
+      }
+   }
+
    &__content {
-      padding-left: 911px;
-      position: absolute;
-
-      @media (max-width: 1567px) {
-         padding-left: 711px;
-      }
-
-      @media (max-width: 1250px) {
-         padding-left: 411px;
-      }
-
-      @media (max-width: 990px) {
-         padding-left: 211px;
-      }
-
-      @media (max-width: 767px) {
-         padding-left: 16px;
-      }
+      width: 100%;
+      min-width: 343px;
+      max-width: 480px;
 
       &-logo {
-         margin: 61px 0px 24px 0px;
-         width: 64px;
-         height: 64px;
+         display: none;
+
+         @media (min-width: 768px) {
+            display: block;
+            width: 64px;
+            height: 64px;
+            margin-bottom: 24px;
+         }
       }
       &-google {
          margin-top: 12px;
-
-         @media (max-width: 767px) {
-            margin-left: 0px;
-         }
       }
 
-      h1 {
+      &-title {
+         @media (min-width: 768px) {
+            max-width: unset !important;
+         }
+      }
+      h2 {
+         font-family: "SquadExtraBold", sans-serif;
          font-weight: 800;
-         font-size: 40px;
-         line-height: 48px;
-         letter-spacing: -0.4px;
-         color: #ffffff;
-         width: 510px;
+         font-size: 32px;
+         line-height: 40px;
+         margin-bottom: 12px;
+         color: #fff;
+         max-width: 280px;
 
-         @media (max-width: 767px) {
-            font-size: 28px;
-            line-height: 36px;
-            width: 347px;
+         @media (min-width: 768px) {
+            font-size: 40px;
+            line-height: 48px;
+         }
+
+         @media (min-width: 1600px) {
+            letter-spacing: -0.4px;
+         }
+         span {
+            display: block;
          }
       }
       p {
+         font-family: "SourceSansPro", sans-serif;
          font-weight: normal;
          font-size: 20px;
          line-height: 28px;
          color: #ffffff;
-         max-width: 548px;
-
-         @media (max-width: 767px) {
-            font-size: 24px;
-            line-height: 30px;
-            width: 347px;
-         }
+         margin-bottom: 12px;
       }
       &-row {
          display: flex;
+         flex-direction: row;
+         align-items: center;
+         margin-top: 20px;
       }
       &-row-qr {
-         @media (max-width: 767px) {
-            display: none;
+         margin-right: 16px;
+         display: none;
+
+         @media (min-width: 768px) {
+            display: block;
          }
       }
       &-col {
-         margin-left: 48px;
-         margin-top: 24px;
          display: flex;
          flex-direction: column;
 
-         @media (max-width: 767px) {
-            display: block;
-            margin-left: -21px;
+         &-apple {
+            margin-bottom: 12px;
          }
       }
    }

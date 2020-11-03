@@ -1,6 +1,7 @@
 import React from 'react';
 import Deploy from './Deploy';
-import './stock.scss';
+import './Stock.scss';
+import s from './Deploy.module.css';
 
 class Stock extends React.Component {
 
@@ -9,8 +10,9 @@ class Stock extends React.Component {
    }
 
    handleDeploy = () => {
-      this.state.isOpen = !this.state.isOpen;
-      this.setState({})
+      this.setState(prevState => ({
+         isOpen: !prevState.isOpen
+      }));
    }
 
    render() {
@@ -23,12 +25,12 @@ class Stock extends React.Component {
                   <div className="stock__content">
                      <h1 className="stock__content-h1">Акция «Будь в плюсе»</h1>
                      <p className="stock__content-p">Получите возможность удвоить остаток на вашем накопительном счете! </p>
-                     <a onClick={this.handleDeploy} className="stock__content-a" href="#more">Подробнее</a>
+                     <a onClick={this.handleDeploy} className={`${isOpen && s.none} ${s.a}`} href="#more">Подробнее</a>
                   </div>
                </div>
             </section>
             { isOpen &&
-               <Deploy />
+               <Deploy isOpen={isOpen} handleDeploy={this.handleDeploy} />
             }
 
          </div>

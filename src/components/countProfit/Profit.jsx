@@ -1,52 +1,50 @@
-import React, { useState } from 'react';
-import './countProfit.scss';
-import Text from './Text';
+import React from 'react';
+import './CountProfit.scss';
+import arrow from '../../assets/images/arrow-2.svg';
+
 
 class Profit extends React.Component {
-
-
    state = {
+      activeTabIndex: 0,
       text: [
-         { onActive: true, name: 'Всем клиентам' },
-         { onActive: false, name: 'Клиентам ОТП Premium' }
+         { name: 'Всем клиентам' },
+         { name: 'ОТП Premium' }
       ]
 
    }
 
-   handleClass = (name) => {
-      const text = this.state.text.concat()
-
-      const texts = text.find(t => t.name === name)
-      texts.onActive = !texts.onActive;
-
-      this.setState({ text })
-   }
-
-   renderText() {
-      return this.state.text.map(texts => {
-         return (
-            <Text
-               texts={texts}
-               key={texts.name}
-               handleClass={this.handleClass.bind(this, texts.name)}
-            />
-         )
-      })
-   }
-
+   handleTabClick = tabIndex => this.setState(state => state.activeTabIndex === tabIndex ? null : ({ activeTabIndex: tabIndex }));
 
 
    render() {
-
       return (
          <div className="profit">
             <div>
-               {this.renderText()}
-               <h1>Рассчитайте свой доход по накопительному счету</h1>
+               {React.Children.map(this.props.children, (tab, index) =>
+                  React.cloneElement(tab, {
+                     index,
+                     active: index === this.state.activeTabIndex,
+                     onClick: this.handleTabClick
+                  }))
+               }
+               <div className="profit__title">
+                  <h1>Рассчитайте свой доход по накопительному счету</h1>
+               </div>
                <div className="profit__text-row">
-                  <p className="profit__text">Пополнение и снятие без ограничений</p>
-                  <p className="profit__text">Выплата процентов каждый месяц</p>
-                  <p className="profit__text">Возможность открытия онлайн</p>
+                  <ul className="profit__text-list">
+                     <li className="profit__text">
+                        <img src={arrow} />
+                        <p>Пополнение и снятие без ограничений</p>
+                     </li>
+                     <li className="profit__text">
+                        <img src={arrow} />
+                        <p>Выплата процентов каждый месяц</p>
+                     </li>
+                     <li className="profit__text">
+                        <img src={arrow} />
+                        <p>Возможность открытия онлайн</p>
+                     </li>
+                  </ul>
                </div>
             </div>
          </div >

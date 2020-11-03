@@ -1,5 +1,5 @@
 import React from 'react';
-import './cart.scss';
+import './Сart.scss';
 import cart from '../../assets/images/cart.png'
 import CartForm from './CartForm';
 
@@ -21,36 +21,36 @@ class Cart extends React.Component {
       const { isOpen } = this.state
 
       return (
-         <div>
+         <section>
             <div className="cart">
                <div className="container">
-                  <div className="cart__content">
-
-                     <div className="cart__content-title">
-                        <h1>Бесплатная карта с доставкой на дом</h1>
-                        <h3>Закажите карту «ОТП Покупки» онлайн и получайте повышенную ставку уже сейчас</h3>
-                     </div>
-
-                     <div className="cart__content-row">
+                  <div className="cart__header">
+                     <h1>Бесплатная карта с доставкой на дом</h1>
+                     <p>Закажите карту «ОТП Покупки» онлайн и получайте повышенную ставку уже сейчас</p>
+                  </div>
+                  <div className="cart__body">
+                     <div className="cart__body-img">
                         <img src={cart} />
-                        <div className="cart__content-col">
-                           <p>Обслуживание карты при выполнении простых условий — <span>0 ₽</span></p>
-                           <p>Дополнительно до <span>2,5% </span>годовых к ставке по накопительному счету</p>
-                           <p>Снятие наличных в банкоматах любых банков без комиссии — до 30 000 ₽</p>
-                        </div>
                      </div>
-
-                     <div className="cart__content-flex">
-                        <button onClick={this.handleDeploy}>Заказать карту</button>
-                        <a href="#">Тарифы по карте</a>
+                     <div className="cart__body-content">
+                        <ul className="cart__body-content-list">
+                           <li>Обслуживание карты при выполнении простых условий — <span>0 ₽</span></li>
+                           <li>Дополнительно до <span>2,5% </span>годовых к ставке по накопительному счету</li>
+                           <li>Снятие наличных в банкоматах любых банков без комиссии — до 30 000 ₽</li>
+                        </ul>
                      </div>
+                  </div>
+                  <div className="cart__footer">
+                     <button onClick={this.handleDeploy}>Заказать карту</button>
+                     <a href="#">Тарифы по карте</a>
                   </div>
                </div>
             </div>
-            {isOpen &&
+            {
+               isOpen &&
                <CartForm />
             }
-         </div>
+         </section >
       );
    }
 }

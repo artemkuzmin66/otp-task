@@ -1,5 +1,7 @@
 import React from 'react';
-import './question.scss';
+import './Question.scss';
+import up from '../../assets/images/up.svg'
+import down from '../../assets/images/down.png'
 
 
 class Question extends React.Component {
@@ -15,20 +17,24 @@ class Question extends React.Component {
 
 
    handleDeploy1 = () => {
-      this.state.isOpen1 = !this.state.isOpen1;
-      this.setState({})
+      this.setState(prevState => ({
+         isOpen1: !prevState.isOpen1
+      }));
    }
    handleDeploy2 = () => {
-      this.state.isOpen2 = !this.state.isOpen2;
-      this.setState({})
+      this.setState(prevState => ({
+         isOpen2: !prevState.isOpen2
+      }));
    }
    handleDeploy3 = () => {
-      this.state.isOpen3 = !this.state.isOpen3;
-      this.setState({})
+      this.setState(prevState => ({
+         isOpen3: !prevState.isOpen3
+      }));
    }
    handleDeploy4 = () => {
-      this.state.isOpen4 = !this.state.isOpen4;
-      this.setState({})
+      this.setState(prevState => ({
+         isOpen4: !prevState.isOpen4
+      }));
    }
 
 
@@ -36,35 +42,46 @@ class Question extends React.Component {
    render() {
       const { name1, name2, name3, name4, isOpen1, isOpen2, isOpen3, isOpen4 } = this.state
       return (
-         <div>
+         <section>
             <div className="question">
                <div className="container">
                   <div className="question__content">
-                     <h1>Вопросы и ответы</h1>
-                     <div className="question__content-col">
-                        <p onClick={this.handleDeploy1}>У меня уже есть карта ОТП Банка, могу я принять участие в акции?</p>
-
+                     <h1>Вопросы <span>и ответы</span></h1>
+                     <ul className="question__content-list">
+                        <div className="question__content-list-text">
+                           <li onClick={this.handleDeploy1}>У меня уже есть карта ОТП Банка, могу я принять участие в акции?</li>
+                           {isOpen1 ? <img className="question-down" src={down} /> : <img src={up} />}
+                        </div>
                         {isOpen1 &&
                            <div className="deployQuestion__text">{name2}</div>
                         }
+                        <div className="question__content-list-text">
+                           <li onClick={this.handleDeploy2}>В какой срок начисляются проценты по накопительному счету?</li>
+                           {isOpen2 ? <img className="question-down" src={down} /> : <img src={up} />}
 
-                        <p onClick={this.handleDeploy2}>В какой срок начисляются проценты по накопительному счету?</p>
+                        </div>
                         {isOpen2 &&
                            <div className="deployQuestion__text">{name2}</div>
                         }
-                        <p onClick={this.handleDeploy3}>На какой счет зачисляются проценты по накопительному счету?</p>
+                        <div className="question__content-list-text">
+                           <li onClick={this.handleDeploy3}>На какой счет зачисляются проценты по накопительному счету?</li>
+                           {isOpen3 ? <img className="question-down" src={down} /> : <img src={up} />}
+                        </div>
                         {isOpen3 &&
                            <div className="deployQuestion__text">{name3}</div>
                         }
-                        <p onClick={this.handleDeploy4}>На какую сумму остатка на накопительном счете выплачивается повышенная ставка?</p>
+                        <div className="question__content-list-text">
+                           <li onClick={this.handleDeploy4}>На какую сумму остатка на накопительном счете выплачивается повышенная ставка?</li>
+                           {isOpen4 ? <img className="question-down" src={down} /> : <img src={up} />}
+                        </div>
                         {isOpen4 &&
                            <div className="deployQuestion__text">{name4}</div>
                         }
-                     </div>
+                     </ul>
                   </div>
                </div>
             </div>
-         </div>
+         </section>
       );
    }
 }

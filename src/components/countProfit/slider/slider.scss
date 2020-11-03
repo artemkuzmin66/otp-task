@@ -1,5 +1,17 @@
+.range {
+   -webkit-appearance: none;
+   margin: 0;
+   height: 4px;
+   background: linear-gradient(
+      to right,
+      rgb(82, 174, 48) 0%,
+      rgb(82, 174, 48) 24.024%,
+      rgb(184, 184, 184) 24.024%,
+      rgb(184, 184, 184) 100%
+   );
+}
+
 .slider {
-   position: relative;
 }
 
 #fader {
@@ -15,12 +27,11 @@
    box-shadow: 0 0 3px #ffffff;
    border-radius: 40px;
    z-index: 1;
+   margin-top: -10px;
 }
 
 .slider > input[type="range"] {
    border-radius: 2px;
-   width: 262px;
-   height: 4px;
+   width: 100%;
    outline: none;
-   position: absolute;
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import './Deploy.scss';
+import s from './Deploy.module.css';
 
-const Deploy = () => {
+const Deploy = (props) => {
    return (
       <div name="more" className="deployStock">
          <div className="container">
@@ -20,7 +21,7 @@ const Deploy = () => {
             </div>
             <div className="deployStock__footer">
                <a className="deployStock__col-rules" href="#">Правила акции</a>
-               <a className="deployStock__col-close" href="#">Свернуть</a>
+               <a onClick={props.handleDeploy} className="deployStock__col-close" href="#more">Свернуть</a>
             </div>
 
          </div>
