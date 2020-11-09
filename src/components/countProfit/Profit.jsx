@@ -33,15 +33,15 @@ class Profit extends React.Component {
                <div className="profit__text-row">
                   <ul className="profit__text-list">
                      <li className="profit__text">
-                        <img src={arrow} />
+                        <img src={arrow} alt="success" />
                         <p>Пополнение и снятие без ограничений</p>
                      </li>
                      <li className="profit__text">
-                        <img src={arrow} />
+                        <img src={arrow} alt="success" />
                         <p>Выплата процентов каждый месяц</p>
                      </li>
                      <li className="profit__text">
-                        <img src={arrow} />
+                        <img src={arrow} alt="success" />
                         <p>Возможность открытия онлайн</p>
                      </li>
                   </ul>

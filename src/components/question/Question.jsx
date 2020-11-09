@@ -50,14 +50,14 @@ class Question extends React.Component {
                      <ul className="question__content-list">
                         <div className="question__content-list-text">
                            <li onClick={this.handleDeploy1}>У меня уже есть карта ОТП Банка, могу я принять участие в акции?</li>
-                           {isOpen1 ? <img className="question-down" src={down} /> : <img src={up} />}
+                           {isOpen1 ? <img className="question-down" src={down} alt="down" /> : <img src={up} alt="up" />}
                         </div>
                         {isOpen1 &&
-                           <div className="deployQuestion__text">{name2}</div>
+                           <div className="deployQuestion__text">{name1}</div>
                         }
                         <div className="question__content-list-text">
                            <li onClick={this.handleDeploy2}>В какой срок начисляются проценты по накопительному счету?</li>
-                           {isOpen2 ? <img className="question-down" src={down} /> : <img src={up} />}
+                           {isOpen2 ? <img className="question-down" src={down} alt="down" /> : <img src={up} alt="up" />}
 
                         </div>
                         {isOpen2 &&
@@ -65,14 +65,14 @@ class Question extends React.Component {
                         }
                         <div className="question__content-list-text">
                            <li onClick={this.handleDeploy3}>На какой счет зачисляются проценты по накопительному счету?</li>
-                           {isOpen3 ? <img className="question-down" src={down} /> : <img src={up} />}
+                           {isOpen3 ? <img className="question-down" src={down} alt="down" /> : <img src={up} alt="up" />}
                         </div>
                         {isOpen3 &&
                            <div className="deployQuestion__text">{name3}</div>
                         }
                         <div className="question__content-list-text">
                            <li onClick={this.handleDeploy4}>На какую сумму остатка на накопительном счете выплачивается повышенная ставка?</li>
-                           {isOpen4 ? <img className="question-down" src={down} /> : <img src={up} />}
+                           {isOpen4 ? <img className="question-down" src={down} alt="down" /> : <img src={up} alt="up" />}
                         </div>
                         {isOpen4 &&
                            <div className="deployQuestion__text">{name4}</div>

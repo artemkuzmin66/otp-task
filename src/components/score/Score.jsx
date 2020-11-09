@@ -18,13 +18,13 @@ const Score = () => {
                   <span>Сумма трат по карте </span>
                </div>
                <div className="score__body-img">
-                  <img src={diagram} />
+                  <img src={diagram} alt="diagram" />
                </div>
             </div>
             <div className="score__footer">
                <h2 className="score__footer-text">Повышенная ставка начисляется на среднемесячный остаток по счёту,
            <span> не превышающий 350 000 рублей. Далее – начисление по базовой ставке 4%</span></h2>
-               <a href="#">Правила по накопительному счету</a>
+               <a href="/#">Правила по накопительному счету</a>
             </div>
          </div>
       </section>

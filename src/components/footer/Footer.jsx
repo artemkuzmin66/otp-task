@@ -18,10 +18,10 @@ const Footer = () => {
             <div className="footer__content">
                <div className="footer__top">
                   <ul className="footer__top-list">
-                     <li><a href="#">Офисы</a></li>
-                     <li><a href="#">Банкоматы</a></li>
-                     <li><a href="#">О банке</a></li>
-                     <li><a href="#">Интернет-банк</a></li>
+                     <li><a href="/#">Офисы</a></li>
+                     <li><a href="/#">Банкоматы</a></li>
+                     <li><a href="/#">О банке</a></li>
+                     <li><a href="/#">Интернет-банк</a></li>
                   </ul>
                </div>
                <div className="footer__body">
@@ -33,27 +33,27 @@ const Footer = () => {
                      </div>
                      <ul className="footer__body-left-contact-list">
                         <li>
-                           <a href="#"><img src={facebook} /></a>
+                           <a href="/#"><img src={facebook} alt="facebook" /></a>
                         </li>
                         <li>
-                           <a href="#"><img src={youtube} /></a>
+                           <a href="/#"><img src={youtube} alt="youtube" /></a>
                         </li>
                         <li>
-                           <a href="#"><img src={instagram} /></a>
+                           <a href="/#"><img src={instagram} alt="instagram" /></a>
                         </li>
                         <li>
-                           <a href="#"><img src={odnoklassniki} /></a>
+                           <a href="/#"><img src={odnoklassniki} alt="odnoklassniki" /></a>
                         </li>
                         <li>
-                           <a href="#"><img src={vk} /></a>
+                           <a href="/#"><img src={vk} alt="vk" /></a>
                         </li>
                      </ul>
                   </div>
                   <div className="footer__body-right">
                      <h3 className="footer__body-right-title">Мобильный банк</h3>
                      <div className="footer__body-right-store">
-                        <a href="#"><img src={apple} /></a>
-                        <a href="#"><img src={google} /></a>
+                        <a href="/#"><img src={apple} alt="apple" /></a>
+                        <a href="/#"><img src={google} alt="google" /></a>
                      </div>
                   </div>
                </div>
@@ -64,7 +64,7 @@ const Footer = () => {
          <div className="footer__two">
             <div className="container">
                <div className="footer__two-content">
-                  <a href="#"><img src={logo} /></a>
+                  <a href="/#"><img src={logo} alt="otp-bank" /></a>
                   <p>Генеральная лицензия Банка России №2766 от 27.11.2014 г.</p>
                   <p>© 2020 АО «ОТП Банк»</p>
                </div>

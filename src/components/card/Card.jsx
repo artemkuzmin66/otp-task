@@ -1,7 +1,7 @@
 import React from 'react';
-import './Сart.scss';
-import cart from '../../assets/images/cart.png'
-import CartForm from './CartForm';
+import './Сard.scss';
+import card from '../../assets/images/cart.png'
+import CardForm from './CardForm';
 
 
 class Cart extends React.Component {
@@ -11,8 +11,9 @@ class Cart extends React.Component {
    }
 
    handleDeploy = () => {
-      this.state.isOpen = !this.state.isOpen;
-      this.setState({})
+      this.setState(prevState => ({
+         isOpen: !prevState.isOpen
+      }));
    }
 
 
@@ -30,7 +31,7 @@ class Cart extends React.Component {
                   </div>
                   <div className="cart__body">
                      <div className="cart__body-img">
-                        <img src={cart} />
+                        <img src={card} alt="card" />
                      </div>
                      <div className="cart__body-content">
                         <ul className="cart__body-content-list">
@@ -42,13 +43,13 @@ class Cart extends React.Component {
                   </div>
                   <div className="cart__footer">
                      <button onClick={this.handleDeploy}>Заказать карту</button>
-                     <a href="#">Тарифы по карте</a>
+                     <a href="/#">Тарифы по карте</a>
                   </div>
                </div>
             </div>
             {
                isOpen &&
-               <CartForm />
+               <CardForm />
             }
          </section >
       );

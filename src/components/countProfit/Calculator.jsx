@@ -24,7 +24,7 @@ class Calculator extends React.Component {
             <div className="calculator-left">
                <h3>Первоначальная сумма накопления</h3>
                <div className="calculator__slider">
-                  <output for="fader" id="volume" className="calculator__slider-num">{range1}</output>
+                  <output htmlFor="fader" id="volume" className="calculator__slider-num">{range1}</output>
                   <span className="calculator__slider-rub">RUB</span>
                </div>
                <div className="slider">

@@ -2,7 +2,7 @@ import React from 'react';
 import { reduxForm } from 'redux-form';
 import { required } from '../../utils/validators';
 import { createField, Input } from '../common/formControls/FormControls';
-import style from './CartForm.scss';
+import style from './CardForm.scss';
 
 
 const OrderForm = ({ handleSubmit, error }) => {

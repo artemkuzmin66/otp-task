@@ -1,12 +1,10 @@
 import React from 'react';
 import './Deploy.scss';
-import s from './Deploy.module.css';
 
 const Deploy = (props) => {
    return (
       <div name="more" className="deployStock">
          <div className="container">
-
             <div className="deployStock__row">
                <div className="deployStock__col">
                   <h3>Как участвовать</h3>
@@ -20,10 +18,9 @@ const Deploy = (props) => {
                </div>
             </div>
             <div className="deployStock__footer">
-               <a className="deployStock__col-rules" href="#">Правила акции</a>
-               <a onClick={props.handleDeploy} className="deployStock__col-close" href="#more">Свернуть</a>
+               <a className="deployStock__col-rules" href="/#">Правила акции</a>
+               <a onClick={props.handleDeploy} className="deployStock__col-close" href="/#more">Свернуть</a>
             </div>
-
          </div>
       </div>
    );

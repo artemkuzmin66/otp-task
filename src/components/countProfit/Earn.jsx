@@ -20,7 +20,7 @@ const Earn = () => {
                <p className="earn-num-total">309 200 ₽</p>
             </li>
          </ul>
-         <a href="#" target="_blank" className="earn-btn">Открыть счёт</a>
+         <a href="/#" target="_blank" className="earn-btn">Открыть счёт</a>
       </div>
 
    );

@@ -13,19 +13,19 @@ const Mobile = () => {
             <div className="container">
                <div className="mobile__wrapper">
                   <div className="mobile__content">
-                     <img className="mobile__content-logo" src={logo} />
+                     <img className="mobile__content-logo" src={logo} alt="otp-bank" />
                      <h2 className="mobile__content-title">Мобильное приложение <span>ОТП Банк</span></h2>
                      <p>Открывайте вклады и накопительные счета прямо в приложении</p>
                      <p>Оплачивайте телефон, ЖКХ и другие услуги</p>
                      <p>Бесплатно пополняйте счёт с карт других банков</p>
                      <div className="mobile__content-row">
-                        <img className="mobile__content-row-qr" src={QR} />
+                        <img className="mobile__content-row-qr" src={QR} alt="QR" />
                         <div className="mobile__content-col">
-                           <a href="#">
-                              <img className="mobile__content-col-apple" src={apple} />
+                           <a href="/#">
+                              <img className="mobile__content-col-apple" src={apple} alt="apple" />
                            </a>
-                           <a href="#">
-                              <img className="mobile__content-col-google" src={google} />
+                           <a href="/#">
+                              <img className="mobile__content-col-google" src={google} alt="google" />
                            </a>
                         </div>
                      </div>
