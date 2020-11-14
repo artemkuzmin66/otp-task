@@ -13,10 +13,12 @@ import Question from './components/question/Question';
 import Rate from './components/rate/Rate';
 import Score from './components/score/Score';
 import Stock from './components/stock/Stock';
+import HeaderNav from './components/headerNav/HeaderNav';
 
 function App() {
   return (
     <div className="app">
+      <HeaderNav />
       <Header />
       <Stock />
       <Rate />

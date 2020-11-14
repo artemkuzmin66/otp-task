@@ -15,10 +15,13 @@
    &::before {
       content: "";
       background-image: url(../../assets/images/Shape.png);
+      height: 483px;
+      width: 483px;
       position: absolute;
+      bottom: -35%;
       background-size: contain;
       background-position: 0;
-      left: 0px;
+      left: -50px;
       background-repeat: no-repeat;
 
       @media (min-width: 768px) {
@@ -159,9 +162,10 @@
          font-family: "SquadExtraBold", sans-serif;
          font-weight: 800;
          margin-bottom: 34px;
-         font-size: 30px;
-         line-height: 40px;
+         font-size: 40px;
+         line-height: 48px;
          max-width: 480px;
+         margin-top: 78px;
 
          &-inline {
             @media (min-width: 768px) {
@@ -169,15 +173,12 @@
             }
          }
 
-         @media (max-width: 768px) {
-            margin-top: 99px;
-         }
-
          @media (min-width: 768px) {
             font-size: 48px;
             line-height: 56px;
             max-width: 100%;
             letter-spacing: 0;
+            margin-top: 99px;
          }
 
          @media (min-width: 1200px) {

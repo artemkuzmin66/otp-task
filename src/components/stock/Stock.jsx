@@ -37,5 +37,8 @@ class Stock extends React.Component {
       );
    }
 }
+Stock.defaultProps = {
+   keks: 'kesk'
+}
 
 export default Stock;
