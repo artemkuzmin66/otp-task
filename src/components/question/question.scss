@@ -32,7 +32,7 @@
             overflow: hidden;
             box-sizing: border-box;
             border-bottom: 2px solid rgba(184, 184, 184, 0.4);
-
+            cursor: pointer;
             @media (min-width: 768px) {
                padding-top: 24px;
 
@@ -53,7 +53,6 @@
             line-height: 28px;
             color: #151617;
             padding-right: 47px;
-            cursor: pointer;
             padding-bottom: 16px;
 
             &:last-child {

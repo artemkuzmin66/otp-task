@@ -10,7 +10,7 @@ class Question extends React.Component {
 
       isOpen1: false, name1: 'Для получения повышенного бонуса выпускается специальная бесплатная карта тарифа «ОТП Покупки (к накопительному счету)». Покупки по другим картам банка не учитываются.',
       isOpen2: false, name2: 'Проценты по базовой ставке выплачиваются ежемесячно в последний календарный день месяца. Бонус к ставке (за совершение покупок по карте) выплачивается ежемесячно, до 20 числа месяца, следующего за расчетным.',
-      isOpen3: false, name3: 'Проценты по базовой ставке начисляются на накопительный счет, бонус по ставке начисляется на счет карты «ОТП Покупки».',
+      isOpen3: true, name3: 'Проценты по базовой ставке начисляются на накопительный счет, бонус по ставке начисляется на счет карты «ОТП Покупки».',
       isOpen4: false, name4: 'Повышенная ставка начисляется на сумму остатка, не превышающую 350 000 рублей. Количество накопительных счетов при этом не ограничено.'
 
    }
@@ -48,30 +48,30 @@ class Question extends React.Component {
                   <div className="question__content">
                      <h1>Вопросы <span>и ответы</span></h1>
                      <ul className="question__content-list">
-                        <div className="question__content-list-text">
-                           <li onClick={this.handleDeploy1}>У меня уже есть карта ОТП Банка, могу я принять участие в акции?</li>
+                        <div onClick={this.handleDeploy1} className="question__content-list-text">
+                           <li >У меня уже есть карта ОТП Банка, могу я принять участие в акции?</li>
                            {isOpen1 ? <img className="question-down" src={down} alt="down" /> : <img src={up} alt="up" />}
                         </div>
                         {isOpen1 &&
                            <div className="deployQuestion__text">{name1}</div>
                         }
-                        <div className="question__content-list-text">
-                           <li onClick={this.handleDeploy2}>В какой срок начисляются проценты по накопительному счету?</li>
+                        <div onClick={this.handleDeploy2} className="question__content-list-text">
+                           <li>В какой срок начисляются проценты по накопительному счету?</li>
                            {isOpen2 ? <img className="question-down" src={down} alt="down" /> : <img src={up} alt="up" />}
 
                         </div>
                         {isOpen2 &&
                            <div className="deployQuestion__text">{name2}</div>
                         }
-                        <div className="question__content-list-text">
-                           <li onClick={this.handleDeploy3}>На какой счет зачисляются проценты по накопительному счету?</li>
+                        <div onClick={this.handleDeploy3} className="question__content-list-text">
+                           <li >На какой счет зачисляются проценты по накопительному счету?</li>
                            {isOpen3 ? <img className="question-down" src={down} alt="down" /> : <img src={up} alt="up" />}
                         </div>
                         {isOpen3 &&
                            <div className="deployQuestion__text">{name3}</div>
                         }
-                        <div className="question__content-list-text">
-                           <li onClick={this.handleDeploy4}>На какую сумму остатка на накопительном счете выплачивается повышенная ставка?</li>
+                        <div onClick={this.handleDeploy4} className="question__content-list-text">
+                           <li>На какую сумму остатка на накопительном счете выплачивается повышенная ставка?</li>
                            {isOpen4 ? <img className="question-down" src={down} alt="down" /> : <img src={up} alt="up" />}
                         </div>
                         {isOpen4 &&
