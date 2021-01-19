@@ -1,7 +1,8 @@
 import React from 'react';
-import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import store from './redux/redux-store';
+
+// import { Provider } from 'react-redux';
+// import store from './redux/redux-store';
 
 import './App.scss';
 import Card from './components/card/Card';
@@ -35,9 +36,7 @@ function App() {
 const MainApp = (props) => {
   return <BrowserRouter>
     <React.StrictMode>
-      <Provider store={store}>
-        <App />
-      </Provider>
+      <App />
     </React.StrictMode>
   </BrowserRouter>
 }
